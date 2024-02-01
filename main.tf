@@ -82,7 +82,7 @@ resource "azurerm_windows_virtual_machine" "MYwindows10" {
   network_interface_ids = [azurerm_network_interface.MYwindows10.id]
   size                  = "Standard_DS1_v2"
   admin_username        = "Ismile-Training"
-  admin_password        = "P@ssw0rd12345!"
+  admin_password        = .""
   os_disk {
     name              = "windows10-os-disk"
     caching           = "ReadWrite"
@@ -103,7 +103,7 @@ resource "azurerm_windows_virtual_machine" "MYwindows11" {
   network_interface_ids = [azurerm_network_interface.MYwindows11.id]
   size                  = "Standard_DS1_v2"
   admin_username        = "Dev-training"
-  admin_password        = "P@ssw0rd12345!"
+  admin_password        = ""
   os_disk {
     name              = "windows11-os-disk"
     caching           = "ReadWrite"
